@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Calculadora IMC</title>
@@ -7,6 +7,19 @@
 <body>
 	
 	<h2>Indice de masa corporal</h2>
+
+	<form name="imc" id="imc">
+		<p>Altura<br />
+		<input type="text" id="altura" name="altura" />
+		</p>
+
+		<p>Peso <br />
+		<input type="text" id="peso" name="peso" />
+		</p>
+
+		<p><input name="Enviar" type="submit" value="Calcular" onclick="calculo_imc()" />
+		</p>
+	</form>
 	
 	<script type="text/javascript" src="assets/main.js"></script>
 </body>
