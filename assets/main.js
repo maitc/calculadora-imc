@@ -1,10 +1,15 @@
-var espacioDonde = document.getElementById('espacio');
-var res = document.getElementById('respuesta');
+function calculo_imc(pesoimc, alturaimc) {
+	var alturaimc = document.getElementById("altura").value;
+	var pesoimc = document.getElementById("peso").value;
 
-function calcular(){
-	var peso = document.getElementById('peso').value;	
-	var altura = document.getElementById('altura').value;
-
-	return alert(peso/(Math.pow(altura, 2)));
+	var alturaimcNum = parseFloat(alturaimc);
+	var pesoimcNum = parseFloat(pesoimc);
+	
+	alert("Tu IMC es de " + (pesoimcNum/Math.pow(alturaimcNum,2)).toFixed(2));
+	
 }
+
+calculo_imc();
+
+
 
