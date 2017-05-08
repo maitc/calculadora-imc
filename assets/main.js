@@ -5,11 +5,11 @@ function calculo_imc(pesoimc, alturaimc) {
 	var alturaimcNum = parseFloat(alturaimc);
 	var pesoimcNum = parseFloat(pesoimc);
 	
-	alert("Tu IMC es de " + (pesoimcNum/Math.pow(alturaimcNum,2)).toFixed(2));
+	return alert("Tu IMC es de " + (pesoimcNum/Math.pow(alturaimcNum,2)).toFixed(2));
 	
 }
 
-calculo_imc();
+
 
 
 
