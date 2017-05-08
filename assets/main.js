@@ -1,12 +1,11 @@
-//IMC = Peso (kg) / altura (m) 2
+function calculo_imc(pesoimc, alturaimc) {
+	var alturaimc = document.getElementById("altura").value;
+	var pesoimc = document.getElementById("peso").value;
 
-
-function calculo_imc(peso, altura) {
-	var altura = document.imc.altura.value;
-	var peso = document.imc.peso.value;
-
-	var alturaAlCuadrado = Math.pow(altura,2);
-	alert(peso/alturaAlCuadrado);
+	var alturaimcNum = parseFloat(alturaimc);
+	var pesoimcNum = parseFloat(pesoimc);
+	
+	alert("Tu IMC es de " + (pesoimcNum/Math.pow(alturaimcNum,2)).toFixed(2));
 	
 }
 
