@@ -5,17 +5,15 @@
 	<title>Calculadora IMC</title>
 </head>
 <body>
-	<center>
-	<h2>Calcula tu IMC</h2>
 
+	<h1>Indice de masa corporal</h1>
+	<div id="espacio">
+		<label for="peso">Peso<input type="number" id="peso"></label>
+		<label for="altura">Altura<input type="number" id="altura"></label>
+	<button onclick="calcular()">Calcular</button>
+	</div>
+	<div id="respuesta"></div>
 
-	<label for="ingresoPeso">Ingrese peso</label>
-	<input id="peso"><br>
-
-	<label for="ingreseEstatura">Ingrese estatura</label>
-	<input id="estatura">
-	<button onclick="calculadora();">¡calcular!</button>
-	</center>
 	<script type="text/javascript" src="assets/main.js"></script>
 </body>
 </html>
