@@ -5,7 +5,7 @@ function calculadora(){
 
 	var res = pe / (Math.pow(est, 2));
 	var resultado = res.toFixed(2);
-	alert(resultado);
+	alert("Tu IMC es de " + resultado);
 
 }
 
